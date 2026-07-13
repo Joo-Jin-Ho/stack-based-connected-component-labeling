@@ -1,6 +1,12 @@
 # Stack Based Connected Component Labeling
 Stack Based Connected Component Labeling Algorithm for Binary Image Processing.
 
+구체적인 알고리즘 동작 과정과 코드 분석은 report.pdf에 첨부하였습니다.
+
+Connected Component Labeling(CCL) 알고리즘을 C 언어로 구현하여 2차원 Binary Map에서 연결된 객체를 탐색하고 각각의 객체에 고유한 Label을 부여하는 프로젝트입니다. Stack을 이용한 Depth-First Search(DFS)를 기반으로 재귀 호출 없이 연결된 영역을 탐색하도록 구현하였습니다.
+
+탐색 과정에서는 현재 좌표와 이동 방향을 Stack에 저장하고, 더 이상 이동 가능한 위치가 없을 경우 이전 위치로 복귀(Backtracking)하여 남은 영역을 계속 탐색하도록 설계하였습니다.
+
 # 🚀 프로젝트 개요
 15×15 Binary Map에서 연결된 객체를 탐색하고 각각의 객체에 고유한 Label을 부여하는 Connected Component Labeling 알고리즘을 C 언어로 구현한 프로젝트입니다. Stack을 이용한 방식으로 8방향 연결성을 탐색하며, 재귀 호출 대신 직접 구현한 Stack 자료구조를 사용하여 메모리 사용을 효율적으로 관리하였습니다.
 
